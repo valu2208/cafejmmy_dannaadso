@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee – Tu Carrito</title>
+  <link rel="stylesheet" href="./css/carrito.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__brand">
+      <span class="navbar__icon">☕</span>
+      <span class="navbar__name">Coffee</span>
+    </div>
+    <ul class="navbar__links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./menu.html">Menú</a></li>
+      <li><a href="./galeria.html">Galeria</a></li>
+      <li><a href="./contactenos.html">Contáctenos</a></li>
+      <li><a href="./carrito.html" class="cart-icon">🛒</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- LEFT: CART -->
+    <section class="cart-section">
+      <div class="cart-header">
+        <div class="cart-icon-big">🛒</div>
+        <div>
+          <h1 class="cart-title">TU CARRITO</h1>
+          <p class="cart-subtitle">Revisa tus productos antes de finalizar la compra</p>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div class="cart-empty">
+        <div class="empty-icon">🛒</div>
+        <h2 class="empty-title">Tu carrito está vacío</h2>
+        <p class="empty-text">¡Descubre productos increíbles y comienza tu compra!</p>
+        <button class="btn-explore">Explorar Productos</button>
+      </div>
+
+      <!-- (When cart has items, replace .cart-empty with .cart-items) -->
+    </section>
+
+    <!-- RIGHT: ORDER SUMMARY -->
+    <aside class="order-summary">
+      <h2 class="summary-title">Resumen del pedido</h2>
+
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span>$0%</span>
+      </div>
+      <div class="summary-row">
+        <span>Envío</span>
+        <span class="free">Gratis</span>
+      </div>
+
+      <div class="summary-total">
+        <span>Total</span>
+        <span>0%</span>
+      </div>
+
+      <div class="summary-divider"></div>
+
+      <!-- Shipping Info -->
+      <div class="shipping-info">
+        <h3 class="shipping-title">Información de Envío</h3>
+
+        <div class="form-group">
+          <span class="input-icon"></span>
+          <input type="text" placeholder="Dirección completa" />
+        </div>
+        <span>.</span>
+        <div class="form-row">
+          <input type="text" placeholder="Ciudad" />
+          <input type="text" placeholder="Código Postal" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Método de pago</label>
+          <div class="payment-select">
+            <span class="payment-icon">💳</span>
+            <select>
+              <option>Efectivo contra entrega</option>
+              <option>Tarjeta de crédito</option>
+              <option>Transferencia bancaria</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-checkout">Finalizar compra</button>
+
+      <div class="summary-features">
+        <p><span>✅</span> Compra segura y protegida</p>
+        <p><span>🚚</span> Envío gratis en compras +$100.000</p>
+        <p><span>🎧</span> Atención al cliente 24/7</p>
+      </div>
+    </aside>
+
+  </main>
+
+</body>
+</html>

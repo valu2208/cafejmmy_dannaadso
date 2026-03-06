@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee – Únete</title>
+  <link rel="stylesheet" href="./css/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__brand">
+      <span class="navbar__icon">☕</span>
+      <span class="navbar__name">Coffee</span>
+    </div>
+    <ul class="navbar__links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./menu.html">Menú</a></li>
+      <li><a href="./galeria.html">Galeria</a></li>
+      <li><a href="./contactenos.html">Contáctenos</a></li>
+      <li><a href="./carrito.html" class="cart-icon">🛒</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="register-card">
+
+      <!-- Avatar Icon -->
+      <div class="avatar-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="38" height="38">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+      </div>
+
+      <h1 class="card-title">¡Unete a Coffee !</h1>
+      <p class="card-subtitle">crea tu cuenta y disfruta de ofertas exclusivas</p>
+
+      <form class="register-form" novalidate>
+
+        <!-- ID -->
+        <div class="form-group full">
+          <label>Identificación</label>
+          <input type="text" />
+        </div>
+
+        <!-- Nombre / Apellido -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label>Apellido</label>
+            <input type="text" />
+          </div>
+        </div>
+
+        <!-- Edad / Telefono -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>Edad</label>
+            <input type="number" />
+          </div>
+          <div class="form-group">
+            <label>Telefono</label>
+            <input type="tel" />
+          </div>
+        </div>
+
+        <!-- Correo -->
+        <div class="form-group full">
+          <label>Correo electronico</label>
+          <input type="email" />
+        </div>
+
+        <!-- Contraseña / Confirmar -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input type="password" />
+          </div>
+          <div class="form-group">
+            <label>Confirmar Contraseña</label>
+            <input type="password" />
+          </div>
+        </div>
+
+        <p class="password-hint">Mínimo 6 caracteres</p>
+
+        <!-- Terms -->
+        <div class="terms-row">
+          <input type="checkbox" id="terms" />
+          <label for="terms">
+            Acepto los <a href="#">términos y condiciones y la política de privacidad</a>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-register">Registrame</button>
+
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
